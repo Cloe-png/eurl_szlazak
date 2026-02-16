@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact - EURL Szlazak Maçonnerie</title>
+    <meta name="description" content="Contactez EURL Szlazak pour vos projets de maçonnerie à Savonnières-devant-Bar. Devis gratuit et sans engagement.">
+    <meta name="keywords" content="contact maçonnerie, devis gratuit, rénovation, isolation, Savonnières-devant-Bar, artisan maçon">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="EURL SZLAZAK NICOLAS">
+    <link rel="canonical" href="https://votredomaine.com/contact.html">
+    
+    <!-- Préchargement des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Security Headers simplifiés -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css pour animations prédéfinies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Structured Data pour page contact -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact - EURL Szlazak",
+      "description": "Page de contact pour demander un devis gratuit de maçonnerie",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "EURL SZLAZAK NICOLAS",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Zone Des Poutots 10 rue Saponaires",
+          "addressLocality": "Savonnières-devant-Bar",
+          "postalCode": "55000",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33329791147",
+        "email": "eurl.szlazak@hotmail.fr",
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "url": "https://votredomaine.com"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bleu-marine: #162048;
+            --bleu-marine-fonce: #0f1633;
+            --bleu-clair: #1e2a66;
+            --bleu-tres-clair: #27337a;
+            
+            --bg-primary: #0d1420;
+            --bg-secondary: #151e2d;
+            --bg-tertiary: #1a2538;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+            --text-inverse: #121212;
+            --border-color: #2d3748;
+            --card-bg: #1a2538;
+            --header-bg: #ffffff;
+            --footer-bg: #0a1220;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --accent-color: #162048;
+            --accent-hover: #1e2a66;
+            
+            --transition-speed: 0.4s;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, var(--bleu-clair) 0%, var(--bleu-tres-clair) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(22, 32, 72, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(22, 32, 72, 0.6);
+            color: white;
+        }
+
+        .btn-custom:focus, .btn-light:focus, .btn-outline-light:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+
+        .btn-custom:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .logo-img {
+            height: 70px;
+            transition: transform 0.5s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-left {
+            animation: fadeInLeft 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-right {
+            animation: fadeInRight 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sticky-nav {
+            background-color: var(--header-bg) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .sticky-nav.scrolled {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-link {
+            color: #162048 !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1e2a66 !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #1e2a66 !important;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            border-radius: 2px;
+        }
+
+        .navbar-brand span {
+            color: #162048 !important;
+            font-weight: 700;
+        }
+
+        .navbar-toggler i {
+            color: #162048 !important;
+        }
+
+        .navbar-collapse {
+            background-color: white !important;
+            border-radius: 0 0 10px 10px;
+            margin-top: 10px;
+            border: 1px solid rgba(22, 32, 72, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: #162048;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #162048, #1e2a66);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            z-index: 2;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1a2538 0%, #0a1220 100%);
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="white" opacity="0.05" width="100" height="100"/></svg>');
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background: linear-gradient(to right, var(--footer-bg), #070d1a);
+            border-top: 1px solid var(--border-color);
+            color: white;
+        }
+
+        .icon-hover {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            transform: scale(1.2);
+            color: white;
+        }
+
+        .text-custom-secondary {
+            color: var(--text-secondary);
+        }
+
+        .bg-custom-tertiary {
+            background-color: var(--bg-tertiary);
+        }
+
+        .bg-custom-secondary {
+            background-color: var(--bg-secondary);
+        }
+
+        .text-accent {
+            color: white;
+        }
+
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-text::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #162048;
+            opacity: 0.3;
+            z-index: -1;
+            transition: height 0.3s ease;
+        }
+
+        .highlight-text:hover::after {
+            height: 12px;
+        }
+        
+        .btn-outline-light {
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline-light:hover {
+            background-color: white;
+            color: #162048;
+        }
+        
+        .btn-light {
+            color: #162048;
+            background-color: white;
+            border: none;
+        }
+        
+        .btn-light:hover {
+            background-color: #f8f9fa;
+            color: #162048;
+        }
+
+        .bg-gray-50 {
+            background-color: var(--bg-primary);
+        }
+
+        .contact-info-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px var(--shadow-color);
+            border-color: #162048;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #162048, #1e2a66);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .form-control-custom {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+        
+        .form-control-custom:focus {
+            border-color: #162048;
+            box-shadow: 0 0 0 0.2rem rgba(22, 32, 72, 0.25);
+            outline: none;
+        }
+        
+        .form-label {
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            height: 400px;
+        }
+        
+        .map-placeholder {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--text-secondary);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #162048, #1e2a66);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(22, 32, 72, 0.4);
+        }
+        
+        .submit-btn:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+        
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .form-loading {
+            display: none;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .form-error {
+            display: none;
+            background: linear-gradient(135deg, #dc3545, #c82333);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .form-check-input:checked {
+            background-color: #162048;
+            border-color: #162048;
+        }
+        
+        .invalid-feedback {
+            display: none;
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .was-validated .form-control-custom:invalid ~ .invalid-feedback,
+        .was-validated .form-check-input:invalid ~ .invalid-feedback,
+        .form-control-custom.is-invalid ~ .invalid-feedback {
+            display: block;
+        }
+        
+        .form-control-custom.is-invalid {
+            border-color: #dc3545;
+        }
+        
+        .py-20 {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+        
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+        
+        .mb-6 {
+            margin-bottom: 1.5rem !important;
+        }
+        
+        .mb-8 {
+            margin-bottom: 2rem !important;
+        }
+        
+        .mobile-cta-bar {
+            display: none;
+        }
+
+        .honeypot {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 60px;
+            }
+            
+            .navbar-collapse {
+                background-color: white !important;
+                padding: 20px;
+                border-radius: 0 0 10px 10px;
+                margin-top: 10px;
+            }
+            
+            .btn-custom, .nav-link, .submit-btn {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .py-20 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+            
+            .mobile-cta-bar {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #162048;
+                color: white;
+                padding: 12px;
+                z-index: 1000;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            }
+            
+            body {
+                padding-bottom: 60px;
+            }
+            
+            .animate-float, .animate-pulse-slow {
+                animation: none;
+            }
+            
+            .cookie-banner {
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .cookie-banner .row {
+                flex-direction: column;
+            }
+            
+            .cookie-banner .col-md-8 {
+                margin-bottom: 15px;
+            }
+            
+            .cookie-banner .col-md-4 {
+                text-align: center;
+            }
+        }
+        
+        .form-control-custom::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+        
+        .contact-info-card h4 {
+            font-size: 1.3rem;
+        }
+        
+        .service-card h4 {
+            font-size: 1.3rem;
+        }
+        
+        .contact-link {
+            color: #1e2a66;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: var(--bleu-tres-clair);
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="bg-gray-50">
+
+<!-- Bandeau mobile fixe -->
+<div class="mobile-cta-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="tel:0329791147" class="text-white text-decoration-none d-flex align-items-center" id="mobile-phone">
+            <i class="fas fa-phone me-2"></i> Appeler
+        </a>
+        <button onclick="scrollToForm()" class="btn btn-light btn-sm px-3 py-2" id="mobile-form">
+            <i class="fas fa-file-alt me-1"></i> Formulaire
+        </button>
+    </div>
+</div>
+
+<!-- HEADER AVEC NAVBAR BLANCHE -->
+<header>
+        <nav class="navbar navbar-expand-lg sticky-top sticky-nav navbar-white py-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <picture>
+                    <source srcset="images/logo.png" type="image/png">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" alt="Logo EURL Szlazak - entreprise de maçonnerie" 
+                         class="logo-img" loading="lazy" width="70" height="70">
+                </picture>
+                <span class="fw-bold fs-4 d-none d-md-block">EURL SZLAZAK</span>
+            </a>
+            <img src="images/RGE_Qualibat.jpg" alt="Label RGE Qualibat" loading="lazy" width="90" height="60">
+
+            
+
+            
+        </div>
+    </nav>
+</header>
+
+<!-- HERO CONTACT -->
+<section class="py-20 text-center position-relative overflow-hidden bg-custom-tertiary">
+    <div class="container position-relative z-2">
+        <div class="animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Contactez<span class="highlight-text">-nous</span>
+            </h1>
+        </div>
+        
+        <div class="animate-fade-in-up animate-delay-200">
+            <p class="text-lg max-w-3xl mx-auto mb-8 lead text-custom-secondary">
+                Un projet de maçonnerie, rénovation ou isolation ? Discutons-en ! 
+                Ce formulaire sert uniquement à une demande de devis. Les informations transmises
+                sont utilisées pour préparer un futur rendez-vous.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Éléments décoratifs -->
+    <div class="position-absolute top-0 end-0 w-25 h-25 opacity-10" style="animation: float 6s ease-in-out infinite;">
+        <i class="fas fa-tools fa-10x" style="color: #162048;"></i>
+    </div>
+    <div class="position-absolute bottom-0 start-0 w-20 h-20 opacity-10" style="animation: float 6s ease-in-out infinite 1s;">
+        <i class="fas fa-home fa-8x" style="color: #162048;"></i>
+    </div>
+</section>
+
+<!-- INFORMATIONS DE CONTACT -->
+<section class="py-20 bg-custom-secondary">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 reveal">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Notre adresse</h4>
+                    <p class="text-custom-secondary mb-2">
+                        EURL Szlazak<br>
+                        Zone Des Poutots 10 rue Saponaires 55000 Savonnières devant Bar<br>
+                        55000, France
+                    </p>
+                    <p class="text-custom-secondary small">
+                        Nous intervenons dans un rayon de 50km autour de Bar-le-Duc.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 reveal animate-delay-200">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Téléphone</h4>
+                    <p class="text-custom-secondary mb-3">
+                        <a href="tel:0329791147" class="contact-link font-bold text-lg" id="phone-link">
+                            03 29 79 11 47
+                        </a>
+                    </p>
+                    <p class="text-custom-secondary small">
+                        Du lundi au vendredi : 9h - 17h<br>
+                        Réponse rapide garantie
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 reveal animate-delay-400">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Email</h4>
+                    <p class="text-custom-secondary mb-3">
+                        <a href="mailto:eurl.szlazak@hotmail.fr" class="contact-link" id="email-link">
+                            eurl.szlazak@hotmail.fr
+                        </a>
+                    </p>
+                    <p class="text-custom-secondary small">
+                        Réponse sous 24h pour les demandes de devis.<br>
+                        Organisation d'un futur rendez-vous si besoin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORMULAIRE DE CONTACT AVEC FORMSPREE -->
+<section class="py-20 bg-custom-tertiary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 reveal" id="contactFormSection">
+                <h2 class="text-3xl font-bold mb-2">Demande de devis gratuit</h2>
+                <p class="text-custom-secondary mb-6">
+                    Remplissez le formulaire ci-dessous pour une demande de devis uniquement.
+                    Les informations transmises servent à préparer un futur rendez-vous.
+                </p>
+                
+                <!-- FORMULAIRE FORMSPREE -->
+                <form id="contactForm" 
+                      action="https://formspree.io/f/xqeekgpe" 
+                      method="POST"
+                      class="needs-validation" 
+                      novalidate>
+                    
+                    <!-- Champs cachés pour Formspree -->
+                    <input type="hidden" name="_subject" value="Nouvelle demande de devis (RDV futur) - Site EURL Szlazak">
+                    <input type="hidden" name="_replyto" value="" id="replyToField">
+                    <input type="hidden" name="_language" value="fr">
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Prénom *</label>
+                            <input type="text" class="form-control-custom" id="firstName" name="Prénom" required>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre prénom.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Nom *</label>
+                            <input type="text" class="form-control-custom" id="lastName" name="Nom" required>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre nom.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control-custom" id="email" name="Email" required>
+                            <div class="invalid-feedback">
+                                Veuillez saisir une adresse email valide.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Téléphone *</label>
+                            <input type="tel" class="form-control-custom" id="phone" name="Téléphone" required>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre numéro de téléphone.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="address" class="form-label">Adresse du projet</label>
+                        <input type="text" class="form-control-custom" id="address" name="Adresse" placeholder="Rue, Code postal, Ville">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="serviceType" class="form-label">Type de projet *</label>
+                        <select class="form-control-custom" id="serviceType" name="Type de projet" required>
+                            <option value="" selected disabled>Sélectionnez un type de projet</option>
+                            <option value="Ravalement de façade">Ravalement de façade</option>
+                            <option value="Isolation thermique">Isolation thermique</option>
+                            <option value="Maçonnerie générale">Maçonnerie générale</option>
+                            <option value="Rénovation complète">Rénovation complète</option>
+                            <option value="Extension/Construction">Extension/Construction</option>
+                            <option value="Autres travaux">Autres travaux</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Veuillez sélectionner un type de projet.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Description du projet *</label>
+                        <textarea class="form-control-custom" id="message" name="Message" rows="5" 
+                                  placeholder="Décrivez votre projet en détail (surface, type de bâtiment, travaux souhaités, contraintes particulières...)" required></textarea>
+                        <div class="invalid-feedback">
+                            Veuillez décrire votre projet.
+                        </div>
+                        <div class="form-text text-custom-secondary">
+                            <span id="charCount">0</span>/2000 caractères
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="consent" name="Consentement" required>
+                            <label class="form-check-label text-custom-secondary" for="consent">
+                                J'accepte que mes données soient utilisées pour traiter ma demande de devis et préparer un futur rendez-vous. *
+                            </label>
+                            <div class="invalid-feedback">
+                                Vous devez accepter les conditions.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Protection anti-spam invisible -->
+                    <div class="honeypot">
+                        <label for="website">Ne remplissez pas ce champ</label>
+                        <input type="text" id="website" name="website">
+                    </div>
+                    
+                    <!-- État de chargement -->
+                    <div id="formLoading" class="form-loading">
+                        <i class="fas fa-spinner fa-spin fa-2x mb-3"></i>
+                        <p>Envoi en cours...</p>
+                    </div>
+                    
+                    <!-- Message d'erreur -->
+                    <div id="formError" class="form-error">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <span id="errorMessage"></span>
+                    </div>
+                    
+                    <!-- Bouton avec protection contre le double-clic -->
+                    <button type="submit" class="submit-btn" id="submitButton">
+                        <i class="fas fa-paper-plane me-2"></i>Envoyer ma demande de devis
+                    </button>
+                    
+                    <div id="successMessage" class="success-message">
+                        <i class="fas fa-check-circle fa-2x mb-3"></i>
+                        <h4 class="font-bold mb-2">Demande envoyée avec succès !</h4>
+                        <p>Nous vous recontacterons dans les 48h pour préparer un futur rendez-vous.</p>
+                        <p class="text-sm mt-3">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Vous allez recevoir une confirmation par email.
+                        </p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-4 reveal animate-delay-400">
+                <div class="sticky-top" style="top: 100px;">
+                    <div class="service-card p-6 mb-6">
+                        <h4 class="font-bold text-xl mb-4">Pourquoi nous choisir ?</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check" style="color: #162048; margin-top: 3px; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Devis gratuit et sans engagement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check" style="color: #162048; margin-top: 3px; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Réponse sous 48h maximum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check" style="color: #162048; margin-top: 3px; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Expertise depuis 1983</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check" style="color: #162048; margin-top: 3px; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Entreprise locale et réactive</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check" style="color: #162048; margin-top: 3px; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Respect des délais et du budget</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card p-6">
+                        <h4 class="font-bold text-xl mb-4">Documents utiles</h4>
+                        <p class="text-custom-secondary mb-4">
+                            Pour une estimation plus précise, vous pouvez préparer lors du futur rendez-vous :
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-file-alt" style="color: #162048; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Plans du bâtiment (si disponibles)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-camera" style="color: #162048; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Photos du projet</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-ruler-combined" style="color: #162048; margin-right: 8px;"></i>
+                                <span class="text-custom-secondary">Dimensions approximatives</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-[var(--border-color)]">
+                            <p class="text-sm text-custom-secondary">
+                                <i class="fas fa-info-circle me-2" style="color: #162048;"></i>
+                                Ces documents ne sont pas obligatoires mais facilitent l'estimation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CARTE -->
+<section class="py-20 bg-custom-secondary">
+    <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12 reveal">Nous trouver</h2>
+        
+        <div class="map-container reveal">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt fa-4x mb-4" style="color: #162048;"></i>
+                <h4 class="font-bold mb-2">Savonnières-devant-Bar, France</h4>
+                <p class="text-center px-4">Notre entreprise est basée à Savonnières-devant-Bar<br>et intervient aux alentours de 50 KM de Bar-le-Duc</p>
+                <!-- URL sécurisée avec encoding -->
+                <a href="https://www.google.fr/maps/search/Zone+Des+Poutots+10+rue+Saponaires+55000+Savonni%C3%A8res+devant+Bar/@48.7592221,5.1747292,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-custom mt-4" style="width: auto; padding: 0.5rem 1.5rem;" id="map-link">
+                    <i class="fas fa-external-link-alt me-2"></i>Voir sur Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section py-20 text-center">
+    <div class="cta-content">
+        <h2 class="text-3xl font-bold mb-6 animate__animated animate__pulse animate__infinite animate__slower">Prêt à concrétiser votre projet ?</h2>
+        <p class="text-lg mb-6">Contactez-nous dès maintenant pour un devis gratuit et personnalisé</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-4">
+            <a href="tel:0329791147" class="btn btn-light btn-lg px-5 py-3 fw-bold" id="final-phone-cta">
+                <i class="fas fa-phone me-2"></i>03 29 79 11 47
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <picture>
+                    <source srcset="images/logo.png" type="image/webp">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" class="mb-4 logo-img animate__animated animate__fadeIn" 
+                         alt="Logo EURL Szlazak" loading="lazy" width="70" height="70">
+                </picture>
+                <p class="mb-2 fw-bold">EURL SZLAZAK NICOLAS</p>
+                <p class="small text-custom-secondary">SIREN 534 803 416</p>
+</div>
+            
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Contactez-nous</h5>
+                <p class="mb-2">
+                    <i class="fas fa-map-marker-alt me-2 text-accent"></i>
+                    Zone Des Poutots 10 rue Saponaires 55000 Savonnières devant Bar
+                </p>
+                <p class="mb-2">
+                    <i class="fas fa-phone me-2 text-accent"></i>
+                    03 29 79 11 47
+                </p>
+                <p>
+                    <i class="fas fa-envelope me-2 text-accent"></i>
+                    eurl.szlazak@hotmail.fr
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center text-md-end">
+                <h5 class="fw-bold mb-3">Informations légales</h5>
+                <p class="mb-2 small text-custom-secondary">
+                    <a href="https://www.societe.com/societe/szlazak-534803416.html" 
+                       target="_blank" 
+                       class="text-accent hover:underline" id="societe-cta">
+                        <i class="fas fa-external-link-alt me-1"></i> Fiche Société.com
+                    </a>
+                </p>
+    
+            </div>
+        </div>
+        
+        <hr class="my-4 opacity-25">
+        
+        <div class="text-center pt-4">
+            <p class="small mb-0 text-custom-secondary" id="copyright">© <span id="currentYear"></span> EURL Szlazak - Tous droits réservés | <a href="mentions_legales.html" class="text-accent">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Fonction de tracking simplifiée
+    function trackEvent(eventName, category, label) {
+        console.log(`Tracking: ${eventName} | ${category} | ${label}`);
+        
+        // Vérifier le consentement avant de tracker
+        const consent = localStorage.getItem('cookieConsent');
+        if (consent === 'accepted') {
+            // Intégration Google Analytics (si disponible)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, {
+                    'event_category': category,
+                    'event_label': label
+                });
+            }
+        }
+    }
+    
+    // Fonction pour faire défiler jusqu'au formulaire
+    function scrollToForm() {
+        trackEvent('scroll_to_form', 'engagement', 'Défilement formulaire');
+        const formSection = document.getElementById('contactFormSection');
+        if (formSection) {
+            const navbarHeight = document.getElementById('navbar').offsetHeight;
+            window.scrollTo({
+                top: formSection.offsetTop - navbarHeight - 20,
+                behavior: 'smooth'
+            });
+        }
+    }
+    
+    // Initialisation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mettre à jour l'année dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Animation des éléments au scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealPoint = 150;
+            
+            revealElements.forEach(element => {
+                const revealTop = element.getBoundingClientRect().top;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Déclencher une première fois
+        
+        // Animation de la navbar au scroll
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Compteur de caractères pour le textarea
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        
+        if (messageTextarea && charCount) {
+            messageTextarea.addEventListener('input', function() {
+                charCount.textContent = this.value.length;
+            });
+        }
+        
+        // Gestion du formulaire avec Formspree
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        const formLoading = document.getElementById('formLoading');
+        const formError = document.getElementById('formError');
+        const errorMessage = document.getElementById('errorMessage');
+        const submitButton = document.getElementById('submitButton');
+        const replyToField = document.getElementById('replyToField');
+        const emailField = document.getElementById('email');
+        
+        // Mettre à jour le champ _replyto avec l'email
+        if (emailField && replyToField) {
+            emailField.addEventListener('input', function() {
+                replyToField.value = this.value;
+            });
+        }
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Vérifier le consentement RGPD pour le formulaire
+                const consent = localStorage.getItem('cookieConsent');
+                const formConsent = document.getElementById('consent').checked;
+                
+                if (!formConsent) {
+                    trackEvent('form_consent_missing', 'form', 'Consentement manquant');
+                    contactForm.classList.add('was-validated');
+                    return;
+                }
+                
+                // Validation Bootstrap simple
+                if (!contactForm.checkValidity()) {
+                    trackEvent('form_invalid', 'form', 'Validation échouée');
+                    contactForm.classList.add('was-validated');
+                    return;
+                }
+                
+                // Vérifier le honeypot
+                const honeypot = document.getElementById('website');
+                if (honeypot && honeypot.value.trim() !== '') {
+                    // Bot détecté - simuler un succès
+                    trackEvent('honeypot_triggered', 'security', 'Bot détecté');
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    return;
+                }
+                
+                // Afficher l'état de chargement
+                submitButton.style.display = 'none';
+                formLoading.style.display = 'block';
+                formError.style.display = 'none';
+                
+                try {
+                    trackEvent('form_submit_start', 'form', 'Envoi démarré');
+                    
+                    // Envoyer le formulaire à Formspree
+                    const formData = new FormData(contactForm);
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        // Succès
+                        trackEvent('form_submit_success', 'form', 'Envoi réussi');
+                        contactForm.style.display = 'none';
+                        successMessage.style.display = 'block';
+                        formLoading.style.display = 'none';
+                        
+                        // Réinitialiser après 8 secondes
+                        setTimeout(() => {
+                            contactForm.reset();
+                            contactForm.classList.remove('was-validated');
+                            contactForm.style.display = 'block';
+                            successMessage.style.display = 'none';
+                            submitButton.style.display = 'block';
+                            if (charCount) charCount.textContent = '0';
+                        }, 8000);
+                    } else {
+                        // Erreur
+                        trackEvent('form_submit_error', 'form', 'Erreur envoi');
+                        throw new Error('Erreur lors de l\'envoi du formulaire');
+                    }
+                } catch (error) {
+                    // Gestion des erreurs
+                    trackEvent('form_submit_exception', 'form', 'Exception');
+                    formLoading.style.display = 'none';
+                    submitButton.style.display = 'block';
+                    formError.style.display = 'block';
+                    errorMessage.textContent = 'Une erreur est survenue. Veuillez nous appeler au 03 29 79 11 47';
+                    
+                    console.error('Formspree error:', error);
+                    
+                    // Cacher l'erreur après 5 secondes
+                    setTimeout(() => {
+                        formError.style.display = 'none';
+                    }, 5000);
+                }
+            });
+            
+            // Réinitialiser le formulaire si l'utilisateur commence à modifier
+            contactForm.addEventListener('input', function() {
+                if (formError.style.display !== 'none') {
+                    formError.style.display = 'none';
+                }
+            });
+        }
+        
+        // Marquer la page active dans la navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        
+        // Tracking des clics (seulement si consentement donné)
+        const trackButtons = [
+            { selector: '#phone-link', event: 'phone_link_click', label: 'Lien téléphone' },
+            { selector: '#email-link', event: 'email_link_click', label: 'Lien email' },
+            { selector: '#map-link', event: 'map_link_click', label: 'Lien Google Maps' },
+            { selector: '#final-phone-cta', event: 'final_phone_cta', label: 'CTA Final téléphone' },
+            { selector: '#footer-societe-link', event: 'footer_societe_click', label: 'Footer Société.com' },
+            { selector: '#footer-mentions-link', event: 'footer_mentions_click', label: 'Footer Mentions' },
+            { selector: '#footer-cookies-link', event: 'footer_cookies_click', label: 'Footer Cookies' },
+            { selector: '#mobile-phone', event: 'mobile_phone_click', label: 'Mobile téléphone' },
+            { selector: '#mobile-form', event: 'mobile_form_click', label: 'Mobile formulaire' },
+            { selector: '#submitButton', event: 'form_submit_click', label: 'Soumission formulaire' }
+        ];
+        
+        trackButtons.forEach(({ selector, event, label }) => {
+            document.querySelectorAll(selector).forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    // Vérifier le consentement avant de tracker
+                    const consent = localStorage.getItem('cookieConsent');
+                    if (consent === 'accepted') {
+                        trackEvent(event, 'engagement', label);
+                    }
+                    
+                    // Animation de feedback pour les boutons (toujours active)
+                    if (this.tagName === 'BUTTON' || this.classList.contains('btn')) {
+                        const originalHTML = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Chargement...';
+                        this.style.pointerEvents = 'none';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalHTML;
+                            this.style.pointerEvents = 'auto';
+                        }, 1000);
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

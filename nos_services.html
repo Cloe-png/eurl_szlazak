@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Services de maçonnerie - EURL Szlazak</title>
+    <meta name="description" content="Découvrez tous nos services de maçonnerie : isolation thermique, ravalement de façades, carrelage, salle de bain, pavé T, torchis et travaux certifiés RGE Equalibat.">
+    <meta name="keywords" content="maçonnerie, rénovation, isolation, ravalement, carrelage, salle de bain, pavé T, torchis, RGE Equalibat, Savonnières-devant-Bar">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="EURL SZLAZAK NICOLAS">
+    <link rel="canonical" href="https://votredomaine.com/nos_services.html">
+    
+    <!-- Préchargement des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css pour animations prédéfinies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Structured Data pour services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Masonry",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "EURL SZLAZAK NICOLAS",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Zone Des Poutots 10 rue Saponaires",
+          "addressLocality": "Savonnières-devant-Bar",
+          "postalCode": "55000",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33329791147"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.7550,
+          "longitude": 5.1369
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Maçonnerie",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ravalement de façades"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Isolation thermique"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maçonnerie générale"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bleu-marine: #162048;
+            --bleu-marine-fonce: #0f1633;
+            --bleu-clair: #1e2a66;
+            --bleu-tres-clair: #27337a;
+            
+            --bg-primary: #0d1420;
+            --bg-secondary: #151e2d;
+            --bg-tertiary: #1a2538;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+            --text-inverse: #121212;
+            --border-color: #2d3748;
+            --card-bg: #1a2538;
+            --header-bg: #ffffff;
+            --footer-bg: #0a1220;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --accent-color: #162048;
+            --accent-hover: #1e2a66;
+            
+            --transition-speed: 0.4s;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            scroll-behavior: smooth;
+            padding-top: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, var(--bleu-clair) 0%, var(--bleu-tres-clair) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(22, 32, 72, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(22, 32, 72, 0.6);
+            color: white;
+        }
+
+        .btn-custom:focus, .btn-light:focus, .btn-outline-light:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+
+        .btn-custom:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .logo-img {
+            height: 70px;
+            transition: transform 0.5s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-left {
+            animation: fadeInLeft 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-right {
+            animation: fadeInRight 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform-origin: center;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 2.5s infinite;
+        }
+
+        .animate-delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .animate-delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .sticky-nav {
+            background-color: var(--header-bg) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .sticky-nav.scrolled {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-link {
+            color: #162048 !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1e2a66 !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #1e2a66 !important;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            border-radius: 2px;
+        }
+
+        .navbar-brand span {
+            color: #162048 !important;
+            font-weight: 700;
+        }
+
+        .navbar-toggler i {
+            color: #162048 !important;
+        }
+
+        .navbar-collapse {
+            background-color: white !important;
+            border-radius: 0 0 10px 10px;
+            margin-top: 10px;
+            border: 1px solid rgba(22, 32, 72, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: #162048;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #162048, #1e2a66);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            z-index: 2;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:focus-within {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+
+        .section-heading {
+            max-width: 860px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .section-heading p {
+            color: var(--text-secondary);
+        }
+
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .cta-row .gallery-btn,
+        .cta-row .btn-custom {
+            margin-top: 0;
+        }
+
+        #ravalement,
+        #isolation,
+        #maconnerie,
+        #carrelage,
+        #sdb,
+        #pave,
+        #torchis {
+            scroll-margin-top: 120px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1a2538 0%, #0a1220 100%);
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="white" opacity="0.05" width="100" height="100"/></svg>');
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        footer {
+            background: linear-gradient(to right, var(--footer-bg), #070d1a);
+            border-top: 1px solid var(--border-color);
+            color: white;
+        }
+
+        .icon-hover {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            transform: scale(1.2);
+            color: white;
+        }
+
+        .icon-container {
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .icon-container:hover {
+            transform: scale(1.1);
+        }
+
+        .link-accent {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .link-accent:hover {
+            color: #1e2a66;
+        }
+
+        .text-custom-secondary {
+            color: var(--text-secondary);
+        }
+
+        .bg-custom-tertiary {
+            background-color: var(--bg-tertiary);
+        }
+
+        .bg-custom-secondary {
+            background-color: var(--bg-secondary);
+        }
+
+        .text-accent {
+            color: white;
+        }
+
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-text::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #162048;
+            opacity: 0.3;
+            z-index: -1;
+            transition: height 0.3s ease;
+        }
+
+        .highlight-text:hover::after {
+            height: 12px;
+        }
+        
+        .btn-outline-light {
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline-light:hover {
+            background-color: white;
+            color: #162048;
+        }
+        
+        .btn-light {
+            color: #162048;
+            background-color: white;
+            border: none;
+        }
+        
+        .btn-light:hover {
+            background-color: #f8f9fa;
+            color: #162048;
+        }
+
+        .bg-gray-50 {
+            background-color: var(--bg-primary);
+        }
+
+        .service-detail {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .service-detail::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #162048, #1e2a66);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            z-index: 2;
+        }
+
+        .service-detail:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: #162048;
+        }
+
+        .service-detail:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-detail h3 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .service-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .service-feature i {
+            color: #ffffff;
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        
+        .bg-green-700\/30 {
+            background-color: rgba(21, 128, 61, 0.3);
+        }
+        
+        .text-green-300 {
+            color: #86efac;
+        }
+        
+        .bg-blue-700\/30 {
+            background-color: rgba(29, 78, 216, 0.3);
+        }
+        
+        .text-blue-300 {
+            color: #93c5fd;
+        }
+        
+        .bg-amber-700\/30 {
+            background-color: rgba(180, 83, 9, 0.3);
+        }
+        
+        .text-amber-300 {
+            color: #fcd34d;
+        }
+        
+        .services-nav {
+            background-color: var(--bg-tertiary);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            position: static !important;
+            top: auto !important;
+            z-index: 10;
+        }
+        
+        .services-nav .btn {
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            min-height: 44px;
+            min-width: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .services-nav .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .service-rge {
+            background: linear-gradient(135deg, rgba(22, 32, 72, 0.2) 0%, rgba(15, 22, 51, 0.3) 100%);
+            border: 2px solid rgba(30, 42, 102, 0.3);
+        }
+        
+        .icon-rge {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+        }
+        
+        .gallery-btn {
+            background: linear-gradient(135deg, #1e2a66 0%, #27337a 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        .gallery-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(22, 32, 72, 0.4);
+        }
+        
+        .gallery-btn:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+        
+        .gallery-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .gallery-modal-content {
+            position: relative;
+            background-color: var(--bg-secondary);
+            margin: 5% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+            animation: modalFadeIn 0.3s;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .close-gallery {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            background: rgba(0,0,0,0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        .close-gallery:hover {
+            background: rgba(0,0,0,0.7);
+        }
+        
+        .gallery-title {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #162048;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .services-nav .btn.active {
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            color: white;
+            border: none;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(22, 32, 72, 0.4);
+            border: none;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(22, 32, 72, 0.6);
+        }
+        
+        .back-to-top:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+        
+        .mobile-cta-bar {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 60px;
+            }
+            
+            .navbar-collapse {
+                background-color: white !important;
+                padding: 20px;
+                border-radius: 0 0 10px 10px;
+                margin-top: 10px;
+            }
+            
+            .service-detail {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .service-feature {
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            
+            .service-feature i {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+            
+            .services-nav {
+                position: static;
+                top: auto;
+            }
+            
+            .services-nav .btn {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+                margin: 0.2rem;
+            }
+            
+            .badge {
+                margin-bottom: 0.5rem;
+                display: block;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .gallery-item {
+                height: 150px;
+            }
+            
+            .gallery-modal-content {
+                width: 95%;
+                margin: 10% auto;
+                padding: 15px;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+            
+            .mobile-cta-bar {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #162048;
+                color: white;
+                padding: 12px;
+                z-index: 1000;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            }
+            
+            body {
+                padding-bottom: 60px;
+            }
+            
+            .animate-float, .animate-pulse-slow {
+                animation: none;
+            }
+        }
+            .service-detail h3 {
+            font-size: 1.8rem;
+        }
+        
+        .gallery-item:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+        
+        .gallery-item img {
+            background-color: #1e2a66;
+        }
+        
+        .service-category {
+            margin-bottom: 4rem;
+        }
+        
+        .service-category-title {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .service-category-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #162048, #1e2a66);
+        }
+        
+        .service-category-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="bg-gray-50">
+
+<!-- Bandeau mobile fixe -->
+<div class="mobile-cta-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="tel:0329791147" class="text-white text-decoration-none d-flex align-items-center" id="mobile-phone">
+            <i class="fas fa-phone me-2"></i> Appeler
+        </a>
+        <a href="contact.html" class="btn btn-light btn-sm px-3 py-2" id="mobile-cta">
+            <i class="fas fa-file-alt me-1"></i> Devis
+        </a>
+    </div>
+</div>
+
+<!-- HEADER AVEC NAVBAR BLANCHE -->
+<header>
+        <nav class="navbar navbar-expand-lg sticky-top sticky-nav navbar-white py-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <picture>
+                    <source srcset="images/logo.png" type="image/png">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" alt="Logo EURL Szlazak - entreprise de maçonnerie" 
+                         class="logo-img" loading="lazy" width="70" height="70">
+                </picture>
+                <span class="fw-bold fs-4 d-none d-md-block">EURL SZLAZAK</span>
+            </a>
+            <img src="images/RGE_Qualibat.jpg" alt="Label RGE Qualibat" loading="lazy" width="90" height="60">
+
+            
+
+            
+        </div>
+    </nav>
+</header>
+
+<!-- HERO SERVICES -->
+<section class="py-20 text-center position-relative overflow-hidden bg-custom-tertiary">
+    <div class="container position-relative z-2">
+        <div class="animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Nos <span class="highlight-text">services</span> de maçonnerie
+            </h1>
+        </div>
+        
+        <div class="animate-fade-in-up animate-delay-200">
+            <p class="text-lg max-w-3xl mx-auto mb-8 lead text-custom-secondary">
+                Découvrez l'ensemble de nos prestations de maçonnerie, rénovation et isolation. 
+                Des solutions adaptées à chaque projet depuis 1983.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Éléments décoratifs -->
+    <div class="position-absolute top-0 end-0 w-25 h-25 opacity-10 animate-float">
+        <i class="fas fa-tools fa-10x" style="color: #162048;"></i>
+    </div>
+    <div class="position-absolute bottom-0 start-0 w-20 h-20 opacity-10" style="animation: float 6s ease-in-out infinite 1s;">
+        <i class="fas fa-home fa-8x" style="color: #162048;"></i>
+    </div>
+</section>
+
+<!-- NAVIGATION DES SERVICES - STATIQUE -->
+<section class="services-nav py-10">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="text-center mb-5 text-accent">Navigation rapide</h3>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#isolation" class="btn btn-sm btn-outline-light" id="nav-isolation">Isolation</a>
+                    <a href="#ravalement" class="btn btn-sm btn-outline-light" id="nav-ravalement">Ravalement</a>
+                    <a href="#maconnerie" class="btn btn-sm btn-outline-light" id="nav-maconnerie">Maçonnerie</a>
+                    <a href="#carrelage" class="btn btn-sm btn-outline-light" id="nav-carrelage">Carrelage/Dallage</a>
+                    <a href="#sdb" class="btn btn-sm btn-outline-light" id="nav-sdb">Salle de bain</a>
+                    <a href="#pave" class="btn btn-sm btn-outline-light" id="nav-pave">Pavé T</a>
+                    <a href="#torchis" class="btn btn-sm btn-outline-light" id="nav-torchis">Torchis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES DÉTAILLÉS -->
+<section class="py-20 bg-custom-secondary">
+    <div class="container">
+        <div class="section-heading reveal">
+            <h2 class="text-3xl font-bold mb-3">Expertise complète en maçonnerie</h2>
+            <p class="text-lg">Trois pôles majeurs pour couvrir l’essentiel de vos projets, avec des prestations claires et des exemples en galerie.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ravalement de façades -->
+            <div id="ravalement" class="col-md-6 reveal">
+                <div class="service-card p-6 h-full" onclick="openGallery('ravalement')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Ravalement de façades</h4>
+                            <p class="text-custom-secondary mb-3">
+                                Redonnez une seconde jeunesse à votre façade avec notre expertise en ravalement.
+                            </p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Nettoyage haute pression</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Réparation des fissures</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Enduits de finition</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Peinture façade</li>
+                            </ul>
+                            <div class="cta-row">
+                                <button class="gallery-btn mt-0" onclick="openGallery('ravalement')" id="gallery-ravalement">
+                                    <i class="fas fa-images"></i> Voir la galerie photos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Isolation thermique -->
+            <div id="isolation" class="col-md-6 reveal animate-delay-200">
+                <div class="service-card p-6 h-full" onclick="openGallery('isolation')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Isolation thermique intérieur/extérieur</h4>
+                            <p class="text-custom-secondary mb-3">
+                                Améliorez le confort de votre habitation et réduisez vos factures d'énergie.
+                            </p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Isolation par l'extérieur (ITE)</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Isolation par l'intérieur (ITI)</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Isolation des combles</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Isolation des planchers</li>
+                            </ul>
+                            <div class="cta-row">
+                                <button class="gallery-btn mt-0" onclick="openGallery('isolation')" id="gallery-isolation">
+                                    <i class="fas fa-images"></i> Voir la galerie photos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maçonnerie générale -->
+            <div id="maconnerie" class="col-md-6 reveal animate-delay-400">
+                <div class="service-card p-6 h-full" onclick="openGallery('maconnerie')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-tools text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Maçonnerie générale</h4>
+                            <p class="text-custom-secondary mb-3">
+                                Construction neuve, rénovation complète et aménagements sur mesure.
+                            </p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Construction neuve</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Rénovation complète</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Fondations et terrassement</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Aménagements intérieurs</li>
+                            </ul>
+                            <div class="cta-row">
+                                <button class="gallery-btn mt-0" onclick="openGallery('maconnerie')" id="gallery-maconnerie">
+                                    <i class="fas fa-images"></i> Voir la galerie photos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-heading reveal mt-12">
+            <h2 class="text-3xl font-bold mb-3">Tous nos services</h2>
+            <p class="text-lg">Des prestations complémentaires pour vos aménagements et finitions, avec la même exigence de qualité.</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Carrelage et Dallage -->
+            <div id="carrelage" class="col-md-6 reveal">
+                <div class="service-card p-6 h-full" onclick="openGallery('carrelage')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-th-large text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Carrelage & Dallage</h4>
+                            <p class="text-custom-secondary mb-3">Pose professionnelle de carrelage intérieur et extérieur, dallage pour terrasses, margelles de piscine avec finitions soignées.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Carrelage mural et sol</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Dallage extérieur et terrasse</li>
+                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('carrelage')" id="gallery-carrelage">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Salle de bain -->
+            <div id="sdb" class="col-md-6 reveal animate-delay-200">
+                <div class="service-card p-6 h-full" onclick="openGallery('salle-de-bain')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bath text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Aménagement salle de bain</h4>
+                            <p class="text-custom-secondary mb-3">Création et rénovation complète de salles de bain : préparation des supports, pose de carrelage, installation sanitaire.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Rénovation complète</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Carrelage et faïence</li>                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('salle-de-bain')" id="gallery-sdb">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pavé T -->
+            <div id="pave" class="col-md-6 reveal animate-delay-400">
+                <div class="service-card p-6 h-full" onclick="openGallery('pave-t')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-road text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Pavé T et voirie</h4>
+                            <p class="text-custom-secondary mb-3">Pose de pavés autobloquants, dalles, bordures et aménagement d'espaces extérieurs, allées, cours et parkings.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Pavés autobloquants</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Bordures et caniveaux</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Aménagement de voiries privées</li>
+                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('pave-t')" id="gallery-pave">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enduit décoratif -->
+            <div class="col-md-6 reveal animate-delay-600">
+                <div class="service-card p-6 h-full" onclick="openGallery('enduit')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-brush text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Enduit</h4>
+                            <p class="text-custom-secondary mb-3">Application d'enduits traditionnel manuelle ou mécanique pour personnaliser vos façades.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Enduits à la chaux</li>
+                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('enduit')" id="gallery-enduit">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pierre peinture endurcie -->
+            <div class="col-md-6 reveal">
+                <div class="service-card p-6 h-full" onclick="openGallery('pierre-peinture')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-mountain text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Pierre</h4>
+                            <p class="text-custom-secondary mb-3">Nettoyage par procédé d'hydrogommage basse pression.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Traitement des façades en pierre</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Remplacement des pierres</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Protection hydrofuge et anti-mousse</li>
+                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('pierre-peinture')" id="gallery-pierre">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Torchis -->
+            <div id="torchis" class="col-md-6 reveal animate-delay-200">
+                <div class="service-card p-6 h-full" onclick="openGallery('torchis')" style="cursor: pointer;" tabindex="0">
+                    <div class="flex items-start">
+                        <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-leaf text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Torchis traditionnel</h4>
+                            <p class="text-custom-secondary mb-3">Restauration et mise en œuvre de torchis selon les techniques traditionnelles de maçonnerie pour les maisons anciennes et à colombages.</p>
+                            <ul class="list-unstyled text-custom-secondary small">
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Restauration de torchis ancien</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Mise en œuvre traditionnelle</li>
+                                <li><i class="fas fa-check text-green-400 me-2"></i>Rénovation de maisons à colombages</li>
+                            </ul>
+                            <button class="gallery-btn mt-3" onclick="openGallery('torchis')" id="gallery-torchis">
+                                <i class="fas fa-images"></i> Voir la galerie photos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section py-20 text-center">
+    <div class="cta-content">
+        <h2 class="text-3xl font-bold mb-6 animate__animated animate__pulse animate__infinite animate__slower">Un projet spécifique ?</h2>
+        <p class="text-lg mb-6">Discutons de vos besoins en maçonnerie et obtenez un devis personnalisé</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-4">
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold" id="main-cta">
+                <i class="fas fa-envelope me-2"></i>Demander un devis
+            </a>
+            <a href="tel:0329791147" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold" id="phone-cta">
+                <i class="fas fa-phone me-2"></i>03 29 79 11 47
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL GALERIE PHOTOS -->
+<div id="galleryModal" class="gallery-modal">
+    <div class="gallery-modal-content">
+        <button class="close-gallery" onclick="closeGallery()" aria-label="Fermer la galerie">&times;</button>
+        <h2 id="galleryServiceTitle" class="gallery-title"></h2>
+        <div id="galleryContent" class="gallery-grid">
+            <!-- Les photos seront ajoutées dynamiquement ici -->
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-custom-secondary">Pour plus de réalisations, contactez-nous pour voir nos albums complets</p>
+            <a href="contact.html" class="btn-custom btn-sm mt-2" id="gallery-contact">
+                <i class="fas fa-envelope me-2"></i>Nous contacter
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- BOUTON RETOUR EN HAUT -->
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut de la page">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- FOOTER -->
+<footer class="py-12 text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <picture>
+                    <source srcset="images/logo.png" type="image/webp">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" class="mb-4 logo-img animate__animated animate__fadeIn" 
+                         alt="Logo EURL Szlazak" loading="lazy" width="70" height="70">
+                </picture>
+                <p class="mb-2 fw-bold">EURL SZLAZAK NICOLAS</p>
+                <p class="small text-custom-secondary">SIREN 534 803 416</p>
+</div>
+            
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Contactez-nous</h5>
+                <p class="mb-2">
+                    <i class="fas fa-map-marker-alt me-2 text-accent"></i>
+                    Zone Des Poutots 10 rue Saponaires 55000 Savonnières devant Bar
+                </p>
+                <p class="mb-2">
+                    <i class="fas fa-phone me-2 text-accent"></i>
+                    03 29 79 11 47
+                </p>
+                <p>
+                    <i class="fas fa-envelope me-2 text-accent"></i>
+                    eurl.szlazak@hotmail.fr
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center text-md-end">
+                <h5 class="fw-bold mb-3">Informations légales</h5>
+                <p class="mb-2 small text-custom-secondary">
+                    <a href="https://www.societe.com/societe/szlazak-534803416.html" 
+                       target="_blank" 
+                       class="text-accent hover:underline" id="societe-cta">
+                        <i class="fas fa-external-link-alt me-1"></i> Fiche Société.com
+                    </a>
+                </p>
+    
+            </div>
+        </div>
+        
+        <hr class="my-4 opacity-25">
+        
+        <div class="text-center pt-4">
+            <p class="small mb-0 text-custom-secondary" id="copyright">© <span id="currentYear"></span> EURL Szlazak - Tous droits réservés | <a href="mentions_legales.html" class="text-accent">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Fonction de tracking simplifiée
+    function trackEvent(eventName, category, label) {
+        console.log(`Tracking: ${eventName} | ${category} | ${label}`);
+        
+        // Intégration Google Analytics (si disponible)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+    }
+    
+    // Fonction pour mettre en surbrillance la section active
+    function highlightActiveSection() {
+        const sections = document.querySelectorAll('section[id], div[id]');
+        const navLinks = document.querySelectorAll('.services-nav a');
+        
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            const navbarHeight = document.getElementById('navbar').offsetHeight;
+            const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
+            const offset = navbarHeight + servicesNavHeight + 100;
+            
+            if (window.scrollY >= (sectionTop - offset) && 
+                window.scrollY < (sectionTop + sectionHeight - offset)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active', 'btn-custom');
+            link.classList.add('btn-outline-light');
+            
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active', 'btn-custom');
+                link.classList.remove('btn-outline-light');
+            }
+        });
+    }
+    
+    // GALERIE PHOTOS - DONNÉES ET FONCTIONS
+    const galleryData = {
+        'ravalement': {
+            title: 'Ravalement de façades',
+            images: [
+                { src: 'images/services/ravalement1.jpg', alt: 'Ravalement façade avant/après' },
+                { src: 'images/services/ravalement2.jpg', alt: 'Nettoyage haute pression' },
+                { src: 'images/services/ravalement3.jpg', alt: 'Réparation de joints' },
+                { src: 'images/services/ravalement4.jpg', alt: 'Application d\'enduit' },
+                { src: 'images/services/ravalement5.jpg', alt: 'Peinture de façade' },
+                { src: 'images/services/ravalement6.jpg', alt: 'Façade rénovée' }
+            ]
+        },
+        'isolation': {
+            title: 'Isolation thermique',
+            images: [
+                { src: 'images/services/isolation1.jpg', alt: 'Isolation par l\'extérieur' },
+                { src: 'images/services/isolation2.jpg', alt: 'Isolation des combles' },
+                { src: 'images/services/isolation3.jpg', alt: 'Isolation des murs' },
+                { src: 'images/services/isolation4.jpg', alt: 'Pose de laine de verre' },
+                { src: 'images/services/isolation5.jpg', alt: 'Isolation ITE' },
+                { src: 'images/services/isolation6.jpg', alt: 'Finitions isolation' }
+            ]
+        },
+        'maconnerie': {
+            title: 'Maçonnerie générale',
+            images: [
+                { src: 'images/services/maconnerie1.jpg', alt: 'Construction neuve' },
+                { src: 'images/services/maconnerie2.jpg', alt: 'Rénovation de murs' },
+                { src: 'images/services/maconnerie3.jpg', alt: 'Terrassement' },
+                { src: 'images/services/maconnerie4.jpg', alt: 'Fondations' },
+                { src: 'images/services/maconnerie5.jpg', alt: 'Ouvrages en béton' },
+                { src: 'images/services/maconnerie6.jpg', alt: 'Petits travaux' }
+            ]
+        },
+        'carrelage': {
+            title: 'Carrelage et Dallage',
+            images: [
+                { src: 'images/services/carrelage1.jpg', alt: 'Carrelage mural' },
+                { src: 'images/services/carrelage2.jpg', alt: 'Dallage extérieur' },
+                { src: 'images/services/carrelage3.jpg', alt: 'Pose de carrelage' },
+                { src: 'images/services/carrelage4.jpg', alt: 'Terrasse en dalles' },
+                { src: 'images/services/carrelage5.jpg', alt: 'Carrelage salle de bain' },
+                { src: 'images/services/carrelage6.jpg', alt: 'Finitions carrelage' }
+            ]
+        },
+        'salle-de-bain': {
+            title: 'Salle de bain',
+            images: [
+                { src: 'images/services/sdb1.jpg', alt: 'Salle de bain rénovée' },
+                { src: 'images/services/sdb2.jpg', alt: 'Carrelage salle d\'eau' },
+                { src: 'images/services/sdb3.jpg', alt: 'Aménagement complet' },
+                { src: 'images/services/sdb4.jpg', alt: 'Douche à l\'italienne' },
+                { src: 'images/services/sdb5.jpg', alt: 'Faïence murale' },
+                { src: 'images/services/sdb6.jpg', alt: 'Salle de bain moderne' }
+            ]
+        },
+        'pave-t': {
+            title: 'Pavé T et Voirie',
+            images: [
+                { src: 'images/services/pave1.jpg', alt: 'Pavés autobloquants' },
+                { src: 'images/services/pave2.jpg', alt: 'Allée en pavés' },
+                { src: 'images/services/pave3.jpg', alt: 'Pose de bordures' },
+                { src: 'images/services/pave4.jpg', alt: 'Parking en pavés' },
+                { src: 'images/services/pave5.jpg', alt: 'Voirie privée' },
+                { src: 'images/services/pave6.jpg', alt: 'Aménagement extérieur' }
+            ]
+        },
+        'enduit': {
+            title: 'Enduit décoratif',
+            images: [
+                { src: 'images/services/enduit1.jpg', alt: 'Enduit à la chaux' },
+                { src: 'images/services/enduit2.jpg', alt: 'Enduit structuré' },
+                { src: 'images/services/enduit3.jpg', alt: 'Finitions décoratives' },
+                { src: 'images/services/enduit4.jpg', alt: 'Enduit façade' },
+                { src: 'images/services/enduit5.jpg', alt: 'Texture d\'enduit' },
+                { src: 'images/services/enduit6.jpg', alt: 'Application manuelle' }
+            ]
+        },
+        'pierre-peinture': {
+            title: 'Pierre et Peinture endurcie',
+            images: [
+                { src: 'images/services/pierre1.jpg', alt: 'Façade en pierre' },
+                { src: 'images/services/pierre2.jpg', alt: 'Traitement de la pierre' },
+                { src: 'images/services/pierre3.jpg', alt: 'Peinture endurcie' },
+                { src: 'images/services/pierre4.jpg', alt: 'Protection hydrofuge' },
+                { src: 'images/services/pierre5.jpg', alt: 'Rénovation pierre' },
+                { src: 'images/services/pierre6.jpg', alt: 'Finitions peinture' }
+            ]
+        },
+        'torchis': {
+            title: 'Torchis traditionnel',
+            images: [
+                { src: 'images/services/torchis1.jpg', alt: 'Maison à colombages' },
+                { src: 'images/services/torchis2.jpg', alt: 'Restauration torchis' },
+                { src: 'images/services/torchis3.jpg', alt: 'Technique traditionnelle' },
+                { src: 'images/services/torchis4.jpg', alt: 'Torchis ancien' },
+                { src: 'images/services/torchis5.jpg', alt: 'Mise en œuvre' },
+                { src: 'images/services/torchis6.jpg', alt: 'Finitions torchis' }
+            ]
+        }
+    };
+    
+    // Fonction pour ouvrir la galerie
+    function openGallery(serviceId) {
+        trackEvent('gallery_open', 'engagement', `Galerie ${serviceId}`);
+        
+        const modal = document.getElementById('galleryModal');
+        const title = document.getElementById('galleryServiceTitle');
+        const content = document.getElementById('galleryContent');
+        
+        // Récupérer les données de la galerie
+        const serviceData = galleryData[serviceId];
+        
+        if (!serviceData) {
+            title.textContent = 'Galerie photos';
+            content.innerHTML = `
+                <div class="col-12 text-center">
+                    <p class="text-custom-secondary">Les photos de ce service seront bientôt disponibles.</p>
+                </div>
+            `;
+        } else {
+            title.textContent = serviceData.title;
+            
+            let galleryHTML = '';
+            serviceData.images.forEach((image, index) => {
+                galleryHTML += `
+                    <div class="gallery-item" onclick="viewImage('${image.src}', '${image.alt}')" tabindex="0">
+                        <img src="${image.src}" alt="${image.alt}" loading="lazy"
+                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"200\" viewBox=\"0 0 300 200\"><rect width=\"300\" height=\"200\" fill=\"%231e2a66\"/><text x=\"150\" y=\"100\" text-anchor=\"middle\" dy=\".3em\" fill=\"white\" font-family=\"sans-serif\" font-size=\"16\">${serviceData.title} ${index + 1}</text></svg>';">
+                        <div class="gallery-overlay">
+                            <p class="mb-0 small">${image.alt}</p>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            content.innerHTML = galleryHTML;
+        }
+        
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    // Fonction pour fermer la galerie
+    function closeGallery() {
+        trackEvent('gallery_close', 'engagement', 'Fermer galerie');
+        const modal = document.getElementById('galleryModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Fonction pour voir une image en grand
+    function viewImage(src, alt) {
+        trackEvent('image_view', 'engagement', alt);
+        window.open(src, '_blank');
+    }
+    
+    // Initialisation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mettre à jour l'année dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Animation des éléments au scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealPoint = 150;
+            
+            revealElements.forEach(element => {
+                const revealTop = element.getBoundingClientRect().top;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+        
+        // Animation de la navbar au scroll
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Gestion du bouton retour en haut
+        const backToTopButton = document.getElementById('backToTop');
+        
+        function toggleBackToTopButton() {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        }
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        backToTopButton.addEventListener('click', scrollToTop);
+        window.addEventListener('scroll', toggleBackToTopButton);
+        toggleBackToTopButton();
+        
+        // Animation au survol des cartes de service
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // Accessibilité clavier
+            card.addEventListener('focus', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('blur', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Marquer la page active dans la navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        
+        // Navigation fluide vers les sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                if (href === '#' || href.includes('.html')) return;
+                
+                e.preventDefault();
+                const targetId = href;
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    trackEvent('nav_click', 'navigation', `Aller à ${targetId}`);
+                    
+                    const navbarHeight = document.getElementById('navbar').offsetHeight;
+                    const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navbarHeight - servicesNavHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    history.pushState(null, null, targetId);
+                }
+            });
+        });
+        
+        // Surligner la section active
+        window.addEventListener('scroll', highlightActiveSection);
+        highlightActiveSection();
+        
+        // Gérer les ancres dans l'URL au chargement
+        if (window.location.hash) {
+            setTimeout(() => {
+                const targetElement = document.querySelector(window.location.hash);
+                if (targetElement) {
+                    const navbarHeight = document.getElementById('navbar').offsetHeight;
+                    const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
+                    window.scrollTo({
+                        top: targetElement.offsetTop - navbarHeight - servicesNavHeight - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 500);
+        }
+        
+        // Tracking des clics
+        const trackButtons = [
+            { selector: '#main-cta', event: 'main_cta_click', label: 'CTA Principal' },
+            { selector: '#phone-cta', event: 'phone_cta_click', label: 'Appel téléphonique' },
+            { selector: '#societe-cta', event: 'societe_link_click', label: 'Lien Société.com' },
+            { selector: '#mentions-link', event: 'mentions_click', label: 'Mentions légales' },
+            { selector: '#mobile-phone', event: 'mobile_phone_click', label: 'Appel mobile' },
+            { selector: '#mobile-cta', event: 'mobile_cta_click', label: 'CTA Mobile' },
+            { selector: '.gallery-btn', event: 'gallery_button_click', label: 'Bouton galerie' },
+            { selector: '.btn-custom', event: 'devis_button_click', label: 'Bouton devis' }
+        ];
+        
+        trackButtons.forEach(({ selector, event, label }) => {
+            document.querySelectorAll(selector).forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    // Pour les liens normaux, tracker puis laisser faire
+                    if (this.getAttribute('href') && 
+                        (this.getAttribute('href').startsWith('tel:') || 
+                         this.getAttribute('href').startsWith('mailto:') ||
+                         this.getAttribute('href').startsWith('http'))) {
+                        trackEvent(event, 'engagement', label);
+                        return;
+                    }
+                    
+                    // Pour les boutons avec action interne, tracker et animation
+                    trackEvent(event, 'engagement', label);
+                    
+                    if (selector.includes('cta') || selector.includes('btn-custom')) {
+                        const originalHTML = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Chargement...';
+                        this.style.pointerEvents = 'none';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalHTML;
+                            this.style.pointerEvents = 'auto';
+                        }, 1000);
+                    }
+                });
+            });
+        });
+        
+        // Fermer la modal en cliquant en dehors
+        window.onclick = function(event) {
+            const modal = document.getElementById('galleryModal');
+            if (event.target === modal) {
+                closeGallery();
+            }
+        }
+        
+        // Fermer la modal avec la touche Échap
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeGallery();
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

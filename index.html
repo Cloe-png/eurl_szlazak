@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Entreprise de maçonnerie à Savonnières-devant-Bar | EURL Szlazak</title>
+    <meta name="description" content="EURL Szlazak, entreprise de maçonnerie à Savonnières-devant-Bar. Rénovation, ravalement de façades et isolation. Devis gratuit.">
+    <meta name="keywords" content="maçonnerie, rénovation, ravalement, isolation, Savonnières-devant-Bar, artisan maçon">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="EURL SZLAZAK NICOLAS">
+    <link rel="canonical" href="https://votredomaine.com/index.html">
+
+    <!-- Préchargement des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate.css pour animations prédéfinies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Leaflet CSS pour la carte -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <style>
+        :root {
+            --bleu-marine: #162048;
+            --bleu-marine-fonce: #0f1633;
+            --bleu-clair: #1e2a66;
+            --bleu-tres-clair: #27337a;
+            
+            --bg-primary: #0d1420;
+            --bg-secondary: #151e2d;
+            --bg-tertiary: #1a2538;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+            --text-inverse: #121212;
+            --border-color: #2d3748;
+            --card-bg: #1a2538;
+            --header-bg: #ffffff;
+            --footer-bg: #0a1220;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --accent-color: #162048;
+            --accent-hover: #1e2a66;
+            
+            --transition-speed: 0.4s;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, var(--bleu-clair) 0%, var(--bleu-tres-clair) 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(22, 32, 72, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(22, 32, 72, 0.6);
+            color: white;
+        }
+
+        .btn-custom:focus, .btn-light:focus, .btn-outline-light:focus {
+            outline: 2px solid #162048;
+            outline-offset: 2px;
+        }
+
+        .btn-custom:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .logo-img {
+            height: 70px;
+            transition: transform 0.5s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-left {
+            animation: fadeInLeft 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in-right {
+            animation: fadeInRight 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform-origin: center;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 2.5s infinite;
+        }
+
+        .animate-delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .animate-delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .sticky-nav {
+            background-color: var(--header-bg) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .sticky-nav.scrolled {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-link {
+            color: #162048 !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1e2a66 !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #1e2a66 !important;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            border-radius: 2px;
+        }
+
+        .navbar-brand span {
+            color: #162048 !important;
+            font-weight: 700;
+        }
+
+        .navbar-toggler i {
+            color: #162048 !important;
+        }
+
+        .navbar-collapse {
+            background-color: white !important;
+            border-radius: 0 0 10px 10px;
+            margin-top: 10px;
+            border: 1px solid rgba(22, 32, 72, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+
+        .nav-item {
+            padding: 5px 0;
+        }
+
+        .flip-card {
+            perspective: 1000px;
+            height: 420px; 
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .flip-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .flip-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card:hover .flip-card-icon {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .flip-card.active .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-card-front {
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, #1a2538 100%);
+            border: 2px solid #162048;
+            color: var(--text-primary);
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #151e2d 100%);
+            border: 2px solid #162048;
+            color: var(--text-primary);
+            transform: rotateY(180deg);
+            justify-content: flex-start;
+        }
+
+        .flip-card-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 10px 20px rgba(22, 32, 72, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .flip-card-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .flip-card-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .flip-card-tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .flip-card-tags .tag {
+            padding: 6px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            backdrop-filter: blur(10px);
+        }
+
+        .flip-card-hint {
+            margin-top: auto;
+            text-align: center;
+            color: #1e2a66;
+            font-size: 0.9rem;
+            padding: 10px;
+            background: rgba(22, 32, 72, 0.1);
+            border-radius: 10px;
+            border: 1px dashed #1e2a66;
+        }
+
+        .flip-card-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 20px 0; 
+        }
+
+        .flip-card-list li {
+            padding: 8px 0;
+            color: var(--text-primary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .flip-card-list li:last-child {
+            border-bottom: none;
+        }
+
+        .flip-card-description {
+            text-align: center;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin: 15px 0;
+            padding: 10px; 
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid #162048;
+            font-size: 0.9rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: #162048;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #162048, #1e2a66);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            z-index: 2;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1a2538 0%, #0a1220 100%);
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="white" opacity="0.05" width="100" height="100"/></svg>');
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        footer {
+            background: linear-gradient(to right, var(--footer-bg), #070d1a);
+            border-top: 1px solid var(--border-color);
+            color: white;
+        }
+
+        .icon-hover {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            transform: scale(1.2);
+            color: white;
+        }
+
+        .icon-container {
+            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .link-accent {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .link-accent:hover {
+            color: #1e2a66;
+        }
+
+        .text-custom-secondary {
+            color: var(--text-secondary);
+        }
+
+        .bg-custom-tertiary {
+            background-color: var(--bg-tertiary);
+        }
+
+        .bg-custom-secondary {
+            background-color: var(--bg-secondary);
+        }
+
+        .text-accent {
+            color: white;
+        }
+
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-text::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #162048;
+            opacity: 0.3;
+            z-index: -1;
+            transition: height 0.3s ease;
+        }
+
+        .highlight-text:hover::after {
+            height: 12px;
+        }
+        
+        .btn-outline-light {
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline-light:hover {
+            background-color: white;
+            color: #162048;
+        }
+        
+        .btn-light {
+            color: #162048;
+            background-color: white;
+            border: none;
+        }
+        
+        .btn-light:hover {
+            background-color: #f8f9fa;
+            color: #162048;
+        }
+
+        .bg-gray-50 {
+            background-color: var(--bg-primary);
+        }
+
+        #map::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #162048;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 1000;
+            display: none;
+        }
+
+        #map.loading::before {
+            display: block;
+        }
+
+        /* Map enhancements */
+        .map-shell {
+            border: 1px solid #e6e7ee;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+        }
+        .map-overlay-card {
+            background: rgba(255, 255, 255, 0.92);
+            color: #1d2754;
+            border: 1px solid #e6e7ee;
+            border-radius: 10px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+        }
+        .map-overlay-card h5 {
+            color: #1d2754;
+        }
+        .map-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #eef1ff;
+            color: #1d2754;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-tertiary);
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            z-index: 9999;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .cookie-banner .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cookie-banner a {
+            color: #1e2a66;
+            text-decoration: underline;
+        }
+
+        .cookie-banner a:hover {
+            color: var(--bleu-tres-clair);
+        }
+
+        .cookie-banner .btn-custom {
+            min-height: 44px;
+            min-width: 44px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 60px;
+            }
+            
+            .navbar-collapse {
+                background-color: white !important;
+                padding: 20px;
+                border-radius: 0 0 10px 10px;
+                margin-top: 10px;
+            }
+            
+            #map {
+                height: 250px !important;
+                min-height: 250px !important;
+            }
+            
+            .flip-card {
+                height: 450px;
+            }
+            
+            .flip-card-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+            
+            .flip-card-title {
+                font-size: 1.5rem;
+            }
+            
+            .flip-card-subtitle {
+                font-size: 1rem;
+            }
+            
+            .flip-card-hint {
+                font-size: 0.8rem;
+                padding: 8px;
+            }
+            
+            .animate-float, .animate-pulse-slow {
+                animation: none;
+            }
+            
+            .btn-custom, .nav-link {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+
+        .nav-item {
+            padding: 5px 0;
+        }
+
+        .min-h-96 {
+            min-height: 24rem;
+        }
+
+        #map {
+            filter: grayscale(30%) brightness(0.9) contrast(1.1);
+            transition: filter 0.3s ease;
+            border-radius: 12px;
+            cursor: default;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            min-height: 24rem;
+            background-color: var(--bg-secondary);
+        }
+
+        #map:hover {
+            filter: grayscale(0%) brightness(1) contrast(1);
+        }
+
+        .custom-div-icon {
+            background: transparent;
+            border: none;
+        }
+
+        .leaflet-popup-content {
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            border-radius: 8px;
+            padding: 12px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px var(--shadow-color);
+        }
+
+        .leaflet-popup-tip {
+            background-color: var(--card-bg);
+        }
+
+        .leaflet-container a.leaflet-popup-close-button {
+            color: var(--text-primary);
+        }
+
+        .leaflet-control-zoom a {
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        .leaflet-control-zoom a:hover {
+            background-color: #1e2a66;
+            color: white;
+        }
+
+        .leaflet-container {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .leaflet-control-attribution {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            color: var(--text-secondary) !important;
+            font-size: 10px !important;
+        }
+
+        .leaflet-control-attribution a {
+            color: #1e2a66 !important;
+        }
+        
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        .mobile-cta-bar {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-cta-bar {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #162048;
+                color: white;
+                padding: 12px;
+                z-index: 1000;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            }
+            
+            body {
+                padding-bottom: 60px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="bg-gray-50">
+
+<div class="mobile-cta-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="tel:0329791147" class="text-white text-decoration-none d-flex align-items-center">
+            <i class="fas fa-phone me-2"></i> Appeler
+        </a>
+        <a href="contact.html" class="btn btn-light btn-sm px-3 py-2">
+            <i class="fas fa-file-alt me-1"></i> Devis gratuit
+        </a>
+    </div>
+</div>
+
+<header>
+        <nav class="navbar navbar-expand-lg sticky-top sticky-nav navbar-white py-3" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <picture>
+                    <source srcset="images/logo.png" type="image/png">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" alt="Logo EURL Szlazak - entreprise de maçonnerie" 
+                         class="logo-img" loading="lazy" width="70" height="70">
+                </picture>
+                <span class="fw-bold fs-4 d-none d-md-block">EURL SZLAZAK</span>
+            </a>
+            <img src="images/RGE_Qualibat.jpg" alt="Label RGE Qualibat" loading="lazy" width="90" height="60">
+
+            
+
+            
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="py-20 text-center position-relative overflow-hidden bg-custom-tertiary">
+    <div class="container position-relative z-2">
+        <div class="animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Votre expert en <span class="highlight-text">rénovation</span> et maçonnerie
+            </h1>
+        </div>
+        
+        <div class="animate-fade-in-up animate-delay-200">
+            <p class="text-lg max-w-3xl mx-auto mb-8 lead text-custom-secondary">
+                Entreprise familiale de maçonnerie depuis <strong class="text-accent">1983</strong> à Savonnières-devant-Bar, 
+                spécialisée en ravalement, isolation et maçonnerie générale.
+            </p>
+        </div>
+        
+        <div class="animate-fade-in-up animate-delay-400">
+            <a href="contact.html" class="btn-custom" id="hero-cta">
+                <i class="fas fa-file-alt me-2"></i>Demander un devis gratuit
+            </a>
+        </div>
+    </div>
+    
+    <!-- Éléments décoratifs -->
+    <div class="position-absolute top-0 end-0 w-25 h-25 opacity-10 animate-float">
+        <i class="fas fa-tools fa-10x" style="color: #162048;"></i>
+    </div>
+    <div class="position-absolute bottom-0 start-0 w-20 h-20 opacity-10" style="animation: float 6s ease-in-out infinite 1s;">
+        <i class="fas fa-home fa-8x" style="color: #162048;"></i>
+    </div>
+</section>
+
+<!-- SERVICES AVEC CARTES INTERACTIVES -->
+<section class="section-spacing bg-custom-secondary">
+    <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-4 reveal">Nos Services</h2>
+        <p class="text-lg text-center text-custom-secondary mb-12 max-w-3xl mx-auto reveal">
+            Découvrez quelques-uns de nos services phares. Retournez les cartes pour en savoir plus.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Carte 1: Isolation -->
+            <div class="col-md-6 col-lg-4 reveal">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Face avant -->
+                        <div class="flip-card-front">
+                            <div class="flip-card-icon">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <h3 class="flip-card-title">Isolation</h3>
+                            <p class="flip-card-subtitle">Intérieur & Extérieur</p>
+                            <div class="flip-card-tags">
+                                <span class="tag">Thermique</span>
+                                <span class="tag">Phonique</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Face arrière - OPTIMISÉ -->
+                        <div class="flip-card-back">
+                            <h3 class="flip-card-title mb-2">Isolation Complète</h3>
+                            <ul class="flip-card-list">
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Isolation des combles</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>ITE (Isolation Thermique Extérieure)</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>ITI (Isolation Thermique Intérieure)</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Étanchéité à l'air</li>
+                            </ul>
+                            <p class="flip-card-description mb-3">
+                                Jusqu'à 30% d'économie sur vos factures énergétiques.
+                            </p>
+                            <!-- Bouton avec plus d'espace -->
+                            <div class="mt-auto pt-2">
+                                <a href="nos_services.html#isolation" class="btn-custom w-100 py-3 service-cta">
+                                    <i class="fas fa-info-circle me-2"></i>En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2: Salle de bain -->
+            <div class="col-md-6 col-lg-4 reveal animate-delay-200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Face avant -->
+                        <div class="flip-card-front">
+                            <div class="flip-card-icon">
+                                <i class="fas fa-bath"></i>
+                            </div>
+                            <h3 class="flip-card-title">Salle de Bain</h3>
+                            <p class="flip-card-subtitle">Rénovation Complète</p>
+                            <div class="flip-card-tags">
+                                <span class="tag">Carrelage</span>
+                                <span class="tag">Plomberie</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Face arrière - OPTIMISÉ -->
+                        <div class="flip-card-back">
+                            <h3 class="flip-card-title mb-2">Rénovation Salle de Bain</h3>
+                            <ul class="flip-card-list">
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Carrelage mural et sol</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Installation sanitaire</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Étanchéité douche/baignoire</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Éclairage et ventilation</li>
+                            </ul>
+                            <p class="flip-card-description mb-3">
+                                Conception sur mesure adaptée à vos besoins.
+                            </p>
+                            <!-- Bouton avec plus d'espace -->
+                            <div class="mt-auto pt-2">
+                                <a href="nos_services.html#salledebain" class="btn-custom w-100 py-3 service-cta">
+                                    <i class="fas fa-info-circle me-2"></i>En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3: Ravalement -->
+            <div class="col-md-6 col-lg-4 reveal animate-delay-400">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Face avant -->
+                        <div class="flip-card-front">
+                            <div class="flip-card-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="flip-card-title">Ravalement</h3>
+                            <p class="flip-card-subtitle">Façades & Extérieurs</p>
+                            <div class="flip-card-tags">
+                                <span class="tag">Façade</span>
+                                <span class="tag">Enduit</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Face arrière - OPTIMISÉ -->
+                        <div class="flip-card-back">
+                            <h3 class="flip-card-title mb-2">Ravalement de Façade</h3>
+                            <ul class="flip-card-list">
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Nettoyage haute pression</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Réparation des fissures</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Application d'enduits</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Peinture hydrofuge</li>
+                            </ul>
+                            <p class="flip-card-description mb-3">
+                                Redonnez une nouvelle jeunesse à votre façade.
+                            </p>
+                            <!-- Bouton avec plus d'espace -->
+                            <div class="mt-auto pt-2">
+                                <a href="nos_services.html#ravalement" class="btn-custom w-100 py-3 service-cta">
+                                    <i class="fas fa-info-circle me-2"></i>En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bouton pour voir tous les services -->
+        <div class="text-center mt-8 reveal animate-delay-600">
+            <p class="text-custom-secondary mb-4">Découvrez l'ensemble de notre expertise</p>
+            <a href="nos_services.html" class="btn-custom btn-lg" id="all-services-cta">
+                <i class="fas fa-list me-2"></i>Tous nos services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="py-20 bg-custom-tertiary">
+    <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12 reveal">Pourquoi nous choisir</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="reveal">
+                <div class="icon-container w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 icon-hover">
+                    <i class="fas fa-award text-3xl"></i>
+                </div>
+                <h4 class="font-bold mb-2">Entreprise familiale depuis 1983</h4>
+                <p class="text-sm text-custom-secondary">Un savoir-faire transmis depuis 40 ans au service de votre projet</p>
+            </div>
+            <div class="reveal animate-delay-200">
+                <div class="icon-container w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 icon-hover">
+                    <i class="fas fa-map-marker-alt text-3xl"></i>
+                </div>
+                <h4 class="font-bold mb-2">Entreprise locale</h4>
+                <p class="text-sm text-custom-secondary">Basée à Savonnières-devant-Bar, nous connaissons parfaitement le territoire</p>
+            </div>
+            <div class="reveal animate-delay-400">
+                <div class="icon-container w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 icon-hover">
+                    <i class="fas fa-clock text-3xl"></i>
+                </div>
+                <h4 class="font-bold mb-2">Respect des délais</h4>
+                <p class="text-sm text-custom-secondary">Engagement ferme sur les dates de prestations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ZONE D'INTERVENTION AVEC CARTE INTERACTIVE -->
+<section class="py-20 bg-custom-tertiary">
+    <div class="container">
+        <h2 class="text-3xl font-bold text-center mb-12 reveal">Zone d'intervention</h2>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 reveal">
+                <div class="service-card p-6 h-full">
+                    <h3 class="text-2xl font-bold mb-4">Savonnières-devant-Bar et ses alentours</h3>
+                    <p class="text-custom-secondary mb-4">
+                        Notre entreprise de maçonnerie est basée à Savonnières-devant-Bar et intervient 
+                        dans un secteur de 50 km au alentour de Bar-le-Duc pour tous vos projets de construction et rénovation.
+                    </p>
+                    <p class="text-custom-secondary">
+                        Contactez-nous pour vérifier notre zone d'intervention précise.
+                    </p>
+                    
+                    <div class="mt-4 pt-4 border-top border-[var(--border-color)]">
+                        <h5 class="font-bold mb-2">Informations légales :</h5>
+                        <p class="text-custom-secondary mb-2">
+                            <i class="fas fa-building text-[#162048] mr-2"></i>
+                            <strong>EURL SZLAZAK NICOLAS</strong>
+                        </p>
+                        <p class="text-custom-secondary mb-2">
+                            <i class="fas fa-id-card text-[#162048] mr-2"></i>
+                            SIREN : 534 803 416
+                        </p>
+                        <p class="text-custom-secondary mb-0">
+                            <i class="fas fa-map-marker-alt text-[#162048] mr-2"></i>
+                            <strong>Zone Des Poutots 10 rue Saponaires 55000 Savonnières devant Bar</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 reveal animate-delay-400">
+                <div class="service-card overflow-hidden h-100 position-relative map-shell">
+                    <!-- Carte Leaflet Interactive -->
+                    <div class="position-relative h-100 min-h-96">
+                        <div id="map" class="w-100 h-100 min-h-96"></div>
+                        
+                        <!-- Info-bulle sur la carte -->
+                        <div class="position-absolute top-4 left-4 map-overlay-card p-3">
+                            <h5 class="fw-bold mb-1">
+                                <i class="fas fa-map-pin text-[#162048] mr-2"></i>
+                                Notre localisation
+                            </h5>
+                            <p class="text-sm mb-2">Savonnières-devant-Bar</p>
+                            <span class="map-pill">
+                                <i class="fas fa-ruler-combined"></i> Rayon 50 km
+                            </span>
+                        </div>
+                        
+                        <!-- Bouton d'info -->
+                        <div class="position-absolute bottom-4 right-4 d-flex gap-2">
+                            <a href="https://maps.google.com/?q=Savonnières-devant-Bar" target="_blank" class="btn btn-light btn-sm d-flex align-items-center">
+                                <i class="fas fa-route me-1"></i> Itinéraire
+                            </a>
+                            <button onclick="openSocietePage()" class="btn btn-custom btn-sm d-flex align-items-center" id="map-info-cta">
+                                <i class="fas fa-info-circle me-1"></i> Plus d'informations
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section py-20 text-center">
+    <div class="cta-content">
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__pulse animate__infinite animate__slower">
+            Devis gratuit sous 48h
+        </h2>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-4">
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold shadow-lg" id="main-cta">
+                <i class="fas fa-file-invoice me-2"></i>Demander un devis gratuit
+            </a>
+            <a href="tel:0329791147" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold" id="phone-cta">
+                <i class="fas fa-phone me-2"></i>Appelez-nous : 03 29 79 11 47
+            </a>
+        </div>
+        <p class="mt-4 text-sm opacity-75">
+            <i class="fas fa-shield-alt me-1"></i>Assuré et garanti
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <picture>
+                    <source srcset="images/logo.png" type="image/webp">
+                    <source srcset="images/logo.png" type="image/png">
+                    <img src="images/logo.png" class="mb-4 logo-img animate__animated animate__fadeIn" 
+                         alt="Logo EURL Szlazak" loading="lazy" width="70" height="70">
+                </picture>
+                <p class="mb-2 fw-bold">EURL SZLAZAK NICOLAS</p>
+                <p class="small text-custom-secondary">SIREN 534 803 416</p>
+</div>
+            
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Contactez-nous</h5>
+                <p class="mb-2">
+                    <i class="fas fa-map-marker-alt me-2 text-accent"></i>
+                    Zone Des Poutots 10 rue Saponaires 55000 Savonnières devant Bar
+                </p>
+                <p class="mb-2">
+                    <i class="fas fa-phone me-2 text-accent"></i>
+                    03 29 79 11 47
+                </p>
+                <p>
+                    <i class="fas fa-envelope me-2 text-accent"></i>
+                    eurl.szlazak@hotmail.fr
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center text-md-end">
+                <h5 class="fw-bold mb-3">Informations légales</h5>
+                <p class="mb-2 small text-custom-secondary">
+                    <a href="https://www.societe.com/societe/szlazak-534803416.html" 
+                       target="_blank" 
+                       class="text-accent hover:underline" id="societe-cta">
+                        <i class="fas fa-external-link-alt me-1"></i> Fiche Société.com
+                    </a>
+                </p>
+    
+            </div>
+        </div>
+        
+        <hr class="my-4 opacity-25">
+        
+        <div class="text-center pt-4">
+            <p class="small mb-0 text-custom-secondary" id="copyright">© <span id="currentYear"></span> EURL Szlazak - Tous droits réservés | <a href="mentions_legales.html" class="text-accent">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bannière RGPD / Cookies -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <p class="mb-0 text-custom-secondary">
+                    Nous collectons des informations personnelles (nom, email, téléphone, description du projet)
+                    pour traiter vos demandes et préparer un futur rendez-vous. En continuant, vous acceptez notre
+                    <a href="mentions_legales.html#donnees-personnelles" class="link-accent">politique de confidentialité</a>.
+                </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <button id="accept-cookies" class="btn-custom me-2">
+                    <i class="fas fa-check me-1"></i>Accepter
+                </button>
+                <button id="reject-cookies" class="btn-outline-light">
+                    <i class="fas fa-times me-1"></i>Refuser
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Leaflet JS pour la carte -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    // Fonction pour ouvrir la page Société.com
+    function openSocietePage() {
+        trackEvent('societe_com_click', 'engagement', 'Bouton Plus d\'informations carte');
+        window.open('https://www.societe.com/maps/?siret=53480341600013', '_blank');
+    }
+    
+    // Fonction pour afficher le fallback de la carte
+    function showMapFallback() {
+        const mapElement = document.getElementById('map');
+        if (!mapElement) return;
+        
+        mapElement.innerHTML = `
+            <div class="d-flex flex-column align-items-center justify-content-center h-100 p-4">
+                <i class="fas fa-map-marked-alt fa-3x mb-3" style="color: #162048;"></i>
+                <h4 class="mb-2">Localisation</h4>
+                <p class="text-center mb-3">Savonnières-devant-Bar (55000)</p>
+                <div class="d-flex gap-2">
+                    <button onclick="openSocietePage()" class="btn btn-sm btn-custom">
+                        <i class="fas fa-external-link-alt me-1"></i> Société.com
+                    </button>
+                    <a href="https://maps.google.com/?q=Savonnières-devant-Bar" 
+                       target="_blank" 
+                       class="btn btn-sm btn-outline-light">
+                        <i class="fas fa-map me-1"></i> Google Maps
+                    </a>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Fonction de tracking simplifiée (avec consentement)
+    function trackEvent(eventName, category, label) {
+        console.log(`Tracking: ${eventName} | ${category} | ${label}`);
+        
+        const consent = localStorage.getItem('cookieConsent');
+        if (consent !== 'accepted') {
+            return;
+        }
+        
+        // Intégration Google Analytics (si disponible)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+    }
+    
+    // Initialisation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mettre à jour l'année dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Gestion du consentement RGPD
+        const cookieBanner = document.getElementById('cookie-banner');
+        if (cookieBanner) {
+            const acceptButton = document.getElementById('accept-cookies');
+            const rejectButton = document.getElementById('reject-cookies');
+            const consent = localStorage.getItem('cookieConsent');
+
+            if (!consent) {
+                setTimeout(() => {
+                    cookieBanner.style.display = 'block';
+                }, 1000);
+            }
+
+            if (acceptButton) {
+                acceptButton.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'accepted');
+                    cookieBanner.style.display = 'none';
+                    trackEvent('cookies_accepted', 'privacy', 'Consentement RGPD');
+                });
+            }
+
+            if (rejectButton) {
+                rejectButton.addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'rejected');
+                    cookieBanner.style.display = 'none';
+                    trackEvent('cookies_rejected', 'privacy', 'Refus RGPD');
+
+                    const necessaryCookies = ['cookieConsent'];
+                    const cookies = document.cookie.split(';');
+                    cookies.forEach(cookie => {
+                        const eqPos = cookie.indexOf('=');
+                        const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+                        if (!necessaryCookies.includes(name)) {
+                            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                        }
+                    });
+                });
+            }
+        }
+        
+        // Animation des éléments au scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const revealPoint = 150;
+            
+            revealElements.forEach(element => {
+                const revealTop = element.getBoundingClientRect().top;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+        
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Marquer la page active dans la navigation
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        
+        // Initialiser la carte si elle existe
+        if (document.getElementById('map')) {
+            setTimeout(initMap, 100);
+        }
+        
+        // Gestion des cartes retournables
+        const flipCards = document.querySelectorAll('.flip-card');
+        
+        // Pour mobile, activer au clic
+        if (window.innerWidth <= 768) {
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        }
+        
+        // Animation des cartes au scroll
+        const cards = document.querySelectorAll('.flip-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+        
+        // Tracking des clics sur boutons principaux
+        const trackButtons = [
+            { selector: '#hero-cta', event: 'hero_cta_click', label: 'CTA Hero' },
+            { selector: '.service-cta', event: 'service_cta_click', label: 'CTA Service' },
+            { selector: '#all-services-cta', event: 'all_services_click', label: 'Tous nos services' },
+            { selector: '#main-cta', event: 'main_cta_click', label: 'CTA Principal' },
+            { selector: '#phone-cta', event: 'phone_cta_click', label: 'Appel téléphonique' },
+            { selector: '#societe-cta', event: 'societe_link_click', label: 'Lien Société.com' },
+            { selector: '#map-info-cta', event: 'map_info_click', label: 'Info carte' }
+        ];
+        
+        trackButtons.forEach(({ selector, event, label }) => {
+            document.querySelectorAll(selector).forEach(btn => {
+                btn.addEventListener('click', function() {
+                    trackEvent(event, 'engagement', label);
+                    
+                    // Animation de feedback pour les boutons CTA
+                    if (selector.includes('cta')) {
+                        const originalHTML = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Chargement...';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalHTML;
+                        }, 1000);
+                    }
+                });
+            });
+        });
+    });
+
+    // Fonction d'initialisation de la carte
+    function initMap() {
+        const mapElement = document.getElementById('map');
+        if (!mapElement) return;
+        
+        // Ajouter une classe de chargement
+        mapElement.classList.add('loading');
+        
+        // Timeout pour éviter le blocage
+        const mapTimeout = setTimeout(() => {
+            if (mapElement.classList.contains('loading')) {
+                showMapFallback();
+                mapElement.classList.remove('loading');
+            }
+        }, 5000);
+        
+        try {
+            // Coordonnées exactes de Savonnières-devant-Bar
+            const savonnieresCoords = [48.7550, 5.1369];
+            
+            // Créer la carte
+            const map = L.map('map').setView(savonnieresCoords, 12);
+            
+            // Ajouter la couche de tuiles OpenStreetMap avec thème sombre
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+            
+            // Créer un marqueur personnalisé avec animation
+            const customIcon = L.divIcon({
+                html: `
+                    <div style="
+                        background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 4px 15px rgba(22, 32, 72, 0.6);
+                        border: 3px solid white;
+                        animation: pulse 2.5s infinite;
+                        cursor: pointer;
+                        transition: transform 0.3s ease;
+                    ">
+                        <i class="fas fa-home text-white fa-lg"></i>
+                    </div>
+                `,
+                className: 'custom-div-icon',
+                iconSize: [56, 56],
+                iconAnchor: [28, 56]
+            });
+            
+            // Ajouter le marqueur
+            const marker = L.marker(savonnieresCoords, { 
+                icon: customIcon,
+                title: "EURL SZLAZAK NICOLAS - Cliquez pour plus d'informations"
+            }).addTo(map);
+            
+            // Contenu de la popup
+            const popupContent = `
+                <div style="min-width: 250px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <div style="
+                            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 12px;
+                        ">
+                            <i class="fas fa-building text-white"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary); font-weight: bold; font-size: 1.1rem;">
+                                EURL SZLAZAK NICOLAS
+                            </h4>
+                            <p style="margin: 5px 0 0 0; color: var(--text-secondary); font-size: 0.9rem;">
+                                Maçonnerie depuis 1983
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 15px;">
+                        <p style="margin: 0 0 8px 0; color: var(--text-secondary); font-size: 0.9rem;">
+                            <i class="fas fa-map-marker-alt" style="color: #162048; margin-right: 8px;"></i>
+                            <strong>Savonnières-devant-Bar</strong>
+                        </p>
+                        <p style="margin: 0 0 8px 0; color: var(--text-secondary); font-size: 0.9rem;">
+                            <i class="fas fa-phone" style="color: #162048; margin-right: 8px;"></i>
+                            03 29 79 11 47
+                        </p>
+                        <p style="margin: 0 0 15px 0; color: var(--text-secondary); font-size: 0.9rem;">
+                            <i class="fas fa-id-card" style="color: #162048; margin-right: 8px;"></i>
+                            SIREN : 534 803 416
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button onclick="openSocietePage()" style="
+                            flex: 1;
+                            padding: 8px 12px;
+                            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-size: 0.9rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 6px;
+                        ">
+                            <i class="fas fa-external-link-alt"></i>
+                            Société.com
+                        </button>
+                        
+                        <a href="contact.html" style="
+                            flex: 1;
+                            padding: 8px 12px;
+                            background: var(--bg-tertiary);
+                            color: var(--text-primary);
+                            border: 1px solid var(--border-color);
+                            border-radius: 4px;
+                            text-decoration: none;
+                            font-size: 0.9rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 6px;
+                        ">
+                            <i class="fas fa-envelope"></i>
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            `;
+            
+            // Ajouter la popup
+            marker.bindPopup(popupContent, {
+                maxWidth: 300,
+                minWidth: 280
+            }).openPopup();
+            
+            // Ouvrir la popup au clic sur le marqueur
+            marker.on('click', function() {
+                this.openPopup();
+                trackEvent('map_marker_click', 'engagement', 'Marqueur carte');
+            });
+            
+            // Ajouter un cercle pour la zone d'intervention (50km)
+            L.circle(savonnieresCoords, {
+                color: '#1d2754',
+                fillColor: '#1d2754',
+                fillOpacity: 0.12,
+                weight: 2,
+                dashArray: '6, 6',
+                radius: 50000 // 50km en mètres
+            }).addTo(map);
+            
+            // Ajouter des villes importantes autour
+            const villes = [
+                { name: "Bar-le-Duc", coords: [48.7727, 5.1610] },
+                { name: "Commercy", coords: [48.7639, 5.5927] },
+                { name: "Ligny-en-Barrois", coords: [48.6889, 5.3250] },
+                { name: "Saint-Mihiel", coords: [48.8900, 5.5400] },
+                { name: "Verdun", coords: [49.1598, 5.3870] }
+            ];
+            
+            // Ajouter des marqueurs pour les villes
+            villes.forEach(ville => {
+                L.circleMarker(ville.coords, {
+                    color: '#1d2754',
+                    fillColor: '#1d2754',
+                    fillOpacity: 0.65,
+                    radius: 6
+                }).addTo(map)
+                .bindTooltip(ville.name, {
+                    permanent: false,
+                    direction: 'top'
+                });
+            });
+            
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 200);
+            
+            console.log('Carte initialisée avec succès!');
+            
+        } catch (error) {
+            console.error('Erreur lors de l\'initialisation de la carte:', error);
+            showMapFallback();
+        } finally {
+            // Retirer la classe loading
+            mapElement.classList.remove('loading');
+            clearTimeout(mapTimeout);
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
