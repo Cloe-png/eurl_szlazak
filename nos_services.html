@@ -391,6 +391,29 @@
             outline-offset: 2px;
         }
 
+        .service-card .flex.items-start {
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+            gap: 1rem;
+        }
+
+        .service-card .flex.items-start > div:last-child {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .service-card .list-unstyled {
+            margin-bottom: 0;
+        }
+
+        .service-card .gallery-btn {
+            margin-top: auto !important;
+            align-self: flex-start;
+        }
+
         .section-heading {
             max-width: 860px;
             margin: 0 auto 3rem;
@@ -419,6 +442,8 @@
         #carrelage,
         #sdb,
         #pave,
+        #enduit,
+        #pierre,
         #torchis {
             scroll-margin-top: 120px;
         }
@@ -667,6 +692,18 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
+
+        .services-nav .btn.active {
+            background: linear-gradient(135deg, #f3f6ff 0%, #dbe7ff 100%);
+            color: #162048 !important;
+            border: 1px solid rgba(22, 32, 72, 0.2);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        .services-nav .btn.active:hover,
+        .services-nav .btn.active:focus {
+            color: #162048 !important;
+        }
         
         .service-rge {
             background: linear-gradient(135deg, rgba(22, 32, 72, 0.2) 0%, rgba(15, 22, 51, 0.3) 100%);
@@ -804,12 +841,6 @@
         
         .gallery-item:hover .gallery-overlay {
             transform: translateY(0);
-        }
-        
-        .services-nav .btn.active {
-            background: linear-gradient(135deg, #162048 0%, #1e2a66 100%);
-            color: white;
-            border: none;
         }
         
         .back-to-top {
@@ -1052,13 +1083,15 @@
             <div class="col-12">
                 <h3 class="text-center mb-5 text-accent">Navigation rapide</h3>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="#isolation" class="btn btn-sm btn-outline-light" id="nav-isolation">Isolation</a>
-                    <a href="#ravalement" class="btn btn-sm btn-outline-light" id="nav-ravalement">Ravalement</a>
-                    <a href="#maconnerie" class="btn btn-sm btn-outline-light" id="nav-maconnerie">Maçonnerie</a>
-                    <a href="#carrelage" class="btn btn-sm btn-outline-light" id="nav-carrelage">Carrelage/Dallage</a>
-                    <a href="#sdb" class="btn btn-sm btn-outline-light" id="nav-sdb">Salle de bain</a>
-                    <a href="#pave" class="btn btn-sm btn-outline-light" id="nav-pave">Pavé T</a>
-                    <a href="#torchis" class="btn btn-sm btn-outline-light" id="nav-torchis">Torchis</a>
+                    <a href="#isolation" class="btn btn-sm btn-outline-light" id="nav-isolation">Isolation thermique</a>
+                    <a href="#ravalement" class="btn btn-sm btn-outline-light" id="nav-ravalement">Ravalement de façades</a>
+                    <a href="#maconnerie" class="btn btn-sm btn-outline-light" id="nav-maconnerie">Maçonnerie générale</a>
+                    <a href="#carrelage" class="btn btn-sm btn-outline-light" id="nav-carrelage">Carrelage & Dallage</a>
+                    <a href="#sdb" class="btn btn-sm btn-outline-light" id="nav-sdb">Aménagement salle de bain</a>
+                    <a href="#pave" class="btn btn-sm btn-outline-light" id="nav-pave">Pavé T et voirie</a>
+                    <a href="#enduit" class="btn btn-sm btn-outline-light" id="nav-enduit">Enduit</a>
+                    <a href="#pierre" class="btn btn-sm btn-outline-light" id="nav-pierre">Pierre</a>
+                    <a href="#torchis" class="btn btn-sm btn-outline-light" id="nav-torchis">Torchis traditionnel</a>
                 </div>
             </div>
         </div>
@@ -1231,7 +1264,7 @@
             </div>
             
             <!-- Enduit décoratif -->
-            <div class="col-md-6 reveal animate-delay-600">
+            <div id="enduit" class="col-md-6 reveal animate-delay-600">
                 <div class="service-card p-6 h-full" onclick="openGallery('enduit')" style="cursor: pointer;" tabindex="0">
                     <div class="flex items-start">
                         <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
@@ -1252,7 +1285,7 @@
             </div>
             
             <!-- Pierre peinture endurcie -->
-            <div class="col-md-6 reveal">
+            <div id="pierre" class="col-md-6 reveal">
                 <div class="service-card p-6 h-full" onclick="openGallery('pierre-peinture')" style="cursor: pointer;" tabindex="0">
                     <div class="flex items-start">
                         <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mr-4">
@@ -1408,32 +1441,53 @@
         }
     }
     
+    function getServicesScrollOffset() {
+        const navbar = document.getElementById('navbar');
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        return navbarHeight + 16;
+    }
+
+    function scrollToServiceSection(targetSelector, updateUrl = true) {
+        const targetElement = document.querySelector(targetSelector);
+
+        if (!targetElement) return;
+
+        const targetPosition = window.scrollY + targetElement.getBoundingClientRect().top - getServicesScrollOffset();
+
+        window.scrollTo({
+            top: Math.max(0, targetPosition),
+            behavior: 'smooth'
+        });
+
+        if (updateUrl) {
+            history.pushState(null, null, targetSelector);
+        }
+    }
+
     // Fonction pour mettre en surbrillance la section active
     function highlightActiveSection() {
-        const sections = document.querySelectorAll('section[id], div[id]');
-        const navLinks = document.querySelectorAll('.services-nav a');
-        
+        const navLinks = document.querySelectorAll('.services-nav a[href^="#"]');
+        const triggerLine = getServicesScrollOffset() + 40;
         let currentSection = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            const navbarHeight = document.getElementById('navbar').offsetHeight;
-            const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
-            const offset = navbarHeight + servicesNavHeight + 100;
-            
-            if (window.scrollY >= (sectionTop - offset) && 
-                window.scrollY < (sectionTop + sectionHeight - offset)) {
-                currentSection = section.getAttribute('id');
+
+        navLinks.forEach(link => {
+            const targetSelector = link.getAttribute('href');
+            const targetElement = document.querySelector(targetSelector);
+
+            if (!targetElement) return;
+
+            const rect = targetElement.getBoundingClientRect();
+            if (rect.top <= triggerLine && rect.bottom > triggerLine) {
+                currentSection = targetElement.id;
             }
         });
-        
+
         navLinks.forEach(link => {
-            link.classList.remove('active', 'btn-custom');
+            link.classList.remove('active');
             link.classList.add('btn-outline-light');
-            
+
             if (link.getAttribute('href') === `#${currentSection}`) {
-                link.classList.add('active', 'btn-custom');
+                link.classList.add('active');
                 link.classList.remove('btn-outline-light');
             }
         });
@@ -1689,30 +1743,15 @@
         });
         
         // Navigation fluide vers les sections
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('.services-nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
-                
-                if (href === '#' || href.includes('.html')) return;
-                
                 e.preventDefault();
-                const targetId = href;
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    trackEvent('nav_click', 'navigation', `Aller à ${targetId}`);
-                    
-                    const navbarHeight = document.getElementById('navbar').offsetHeight;
-                    const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
-                    const targetPosition = targetElement.offsetTop - navbarHeight - servicesNavHeight - 20;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    history.pushState(null, null, targetId);
-                }
+
+                if (href === '#') return;
+
+                trackEvent('nav_click', 'navigation', `Aller à ${href}`);
+                scrollToServiceSection(href);
             });
         });
         
@@ -1723,15 +1762,7 @@
         // Gérer les ancres dans l'URL au chargement
         if (window.location.hash) {
             setTimeout(() => {
-                const targetElement = document.querySelector(window.location.hash);
-                if (targetElement) {
-                    const navbarHeight = document.getElementById('navbar').offsetHeight;
-                    const servicesNavHeight = document.querySelector('.services-nav').offsetHeight;
-                    window.scrollTo({
-                        top: targetElement.offsetTop - navbarHeight - servicesNavHeight - 20,
-                        behavior: 'smooth'
-                    });
-                }
+                scrollToServiceSection(window.location.hash, false);
             }, 500);
         }
         
